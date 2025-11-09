@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inowei Anagha</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+  <!-- navbar -->
+    <nav class="bg-gray-700 text-gray-200 shadow-md fixed w-full top-0 left-0 z-50">
+      <div
+        class="px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold">&lt;Inowei /&gt;</div>
+
+        <!-- Menu button (mobile) -->
+        <button
+          id="menu-btn"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          class="block md:hidden text-gray-700 focus:outline-none"
+        >
+          <!-- hamburger icon -->
+          <svg
+            class="w-6 h-6 text-gray-200"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Nav links -->
+        <ul
+          id="menu"
+          class="hidden md:flex space-x-6 text-white font-medium"
+        >
+          <li><a href="#" class="hover:text-rose-700">Home</a></li>
+          <li><a href="#" class="hover:text-rose-700">About</a></li>
+          <li><a href="#" class="hover:text-rose-700">Services</a></li>
+          <li><a href="#" class="hover:text-rose-700 ">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <div
+        id="mobile-menu"
+        class="md:hidden px-4 space-y-2 bg-gray-700 overflow-hidden w-1/3"
+        aria-hidden="true"
+        style="max-height: 0; transition: max-height 300ms ease;"
+      >
+        <a href="#" class="block text-white hover:text-rose-700">Home</a>
+        <a href="#" class="block text-white hover:text-rose-700">About</a>
+        <a href="#" class="block text-white hover:text-rose-700">Services</a>
+        <a href="#" class="block text-white hover:text-rose-700 pb-5">Contact</a>
+      </div>
+    </nav>
+
+    <!-- header section -->
+    <header class="relative bg-[url('/img/tech-bg.jpeg')] bg-center bg-cover w-full text-left flex justify-center items-center text-3xlbefore:content-[''] before:absolute before:inset-0 before:bg-black/50 before:backdrop-blur-sm md:h-screen">
+        <div
+            class="relative flex flex-col items-start md:items-center z-10 justify-center min-h-[500px] text-gray-200 px-4"
+        >
+        <!-- text div -->
+            <h1 class="text-2xl md:text-4xl font-bold mb-4 text-gray-200 ">
+            I'm <span class="text-rose-700 text-4xl font-bold">Inowei Anagha</span> a Frontend Developer
+            </h1>
+            <p class="text-lg md:text-2xl md:text-center mb-8  ">
+            Building sleek, professional, and interactive websites that bring ideas to life.
+            </p>
+            <!-- button div -->
+            <div class="flex flex-col md:flex-row text-left justify-center items-start gap-5 w-full">
+              <a
+            href="#"
+            class="bg-rose-700 hover:bg-rose-800  font-semibold py-3 px-6 rounded-lg md:rounded-4xl transition duration-300 w-full md:w-auto"
+            >Get in Touch</a
+            >
+            <a
+            href="#"
+            class="bg-rose-700 hover:bg-rose-800  font-semibold py-3 px-6 rounded-lg transition duration-300 md:rounded-4xl w-full md:w-auto"
+            >My Services</a
+            >
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- -->
+    <section class="bg-gray-800 text-gray-200 flex flex-col  gap-4 items-center sm:h-screen w-full px-3 py-5">
+      
+      <div>
+        <h4 class="font-bold text-5xl mb-4 text-center">My Services</h4>
+        <p class="text-xl text-center">Performance, Engagement, Design—Delivered.</p>
+      </div>
+      
+      <div class="flex flex-col md:flex-row justify-center gap-4 items-center">
+        <!-- card section -->
+      <div class="flex flex-col justify-center gap-3 items-center p-5  w-full md:max-w-2xl text-center border-2 border-gray-600 rounded-lg hover:border-gray-500 hover:shadow-gray-800  transition duration-300">
+        <h2 class="font-extrabold text-5xl">&lt; &gt;</h2>
+        <h3 class="font-bold text-3xl text-rose-700">Animation & Motion Design</h3>
+        <p class="text-2xl">Brings interface to life</p>
+      </div>
+      <div class="flex flex-col justify-center gap-3 items-center p-5  w-full md:max-w-2xl text-center border-2 border-gray-600 rounded-lg hover:border-gray-500 hover:shadow-gray-800  transition duration-300">
+        <h2 class="font-extrabold text-5xl">&lt; &gt;</h2>
+        <h3 class="font-bold text-3xl text-rose-700">SEO Optimization</h3>
+        <p class="text-2xl">Boost Visibility, Drive Results</p>
+      </div>
+      <div class="flex flex-col justify-center gap-3 items-center p-5  w-full md:max-w-2xl text-center border-2 border-gray-600 rounded-lg hover:border-gray-500 hover:shadow-gray-800  transition duration-300">
+        <h2 class="font-extrabold text-5xl">&lt; &gt;</h2>
+        <h3 class="font-bold text-3xl text-rose-700">Modern Design</h3>
+        <p class="text-2xl">Beautiful and intuitive interfaces</p>
+      </div>
+      </div>
+      
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
