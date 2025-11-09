@@ -336,6 +336,9 @@
   .bg-rose-700 {
     background-color: var(--color-rose-700);
   }
+  .bg-\[url\(\'\.\/img\/tech-bg\.jpeg\'\)\] {
+    background-image: url('./img/tech-bg.jpeg');
+  }
   .bg-\[url\(\'\/img\/tech-bg\.jpeg\'\)\] {
     background-image: url('/img/tech-bg.jpeg');
   }
@@ -475,6 +478,12 @@
       --tw-backdrop-blur: blur(var(--blur-sm));
       -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
       backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    }
+  }
+  .before\:content-\[\'\'\] {
+    &::before {
+      --tw-content: '';
+      content: var(--tw-content);
     }
   }
   .hover\:border-gray-500 {
